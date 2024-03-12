@@ -1,0 +1,106 @@
+#app{
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 2vw;
+}
+
+
+
+#nav{
+  display: flex;
+  margin-bottom: 4vh;
+  justify-content: space-between;
+}
+
+#nav-logo{
+  display: flex;
+  margin-left: 2vw;
+  img{
+    width: 250px;
+  }
+}
+
+
+#download-button-container {
+  text-align: center;
+  margin-right: 2vw; 
+}
+
+#download-button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.675rem - 1px) calc(1rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+#download-button:hover,
+#download-button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#download-button:hover {
+  transform: translateY(-1px);
+}
+
+#download-button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.dropzone {
+  display: flex;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  
+}
+.text-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-zone {
+  display: none; /* Hide the default input style */
+}
+
+.dropzone-content {
+  margin: 0;
+  color: #555; /* Text color */
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+/* Style for when dragging over the dropzone */
+.dropzone.is-drag-active {
+  border-color: #666; /* Darker border color when dragging */
+  background-color: #e0e0e0; /* Lighter background color when dragging */
+}
